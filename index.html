@@ -1,10 +1,11 @@
 <!DOCTYPE html>
+
 <html lang="pt-BR">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>RDVIX Engenharia</title>
-  <style>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>RDVIX Engenharia</title>
+<style>
     body {
       margin: 0;
       font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -12,28 +13,29 @@
       color: #333;
     }
     header {
-      background: #0a0a23;
-      color: #fff;
+      background: #ffffff;
+      color: #0a0a23;
       padding: 1.5rem 1rem;
       display: flex;
       align-items: center;
       justify-content: space-between;
       flex-wrap: wrap;
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
     }
     header img {
-      height: 60px;
+      height: 90px;
     }
     header nav {
       margin-top: 0.5rem;
     }
     nav a {
-      color: #bbb;
+      color: #0a0a23;
       text-decoration: none;
       margin: 0 1rem;
       font-weight: 500;
     }
     nav a:hover {
-      color: #fff;
+      color: #f97316;
     }
     section {
       max-width: 1000px;
@@ -67,58 +69,84 @@
   </style>
 </head>
 <body>
-  <header>
-    <img src="logo-rdvix.png" alt="Logo RDVIX Engenharia">
-    <nav>
-      <a href="#sobre">Sobre</a>
-      <a href="#servicos">Serviços</a>
-      <a href="#projetos">Projetos</a>
-    </nav>
-  </header>
+<header>
+<img alt="Logo RDVIX Engenharia" src="logo-rdvix.png"/>
+<nav>
+<a href="#sobre">Sobre</a>
+<a href="#servicos">Serviços</a>
+<a href="#projetos">Projetos</a>
+</nav>
+</header>
+<section id="sobre">
+<h2>Sobre Nós</h2>
+<p>Somos uma empresa especializada em engenharia elétrica, com foco em qualidade, inovação e eficiência. Atuamos em projetos residenciais, prediais e industriais, entregando soluções inteligentes para nossos clientes.</p>
+</section>
+<section id="servicos">
+<h2>Serviços</h2>
+<div class="grid">
+<div class="card">
+<h3>Projetos Elétricos</h3>
+<p>Desenvolvimento de projetos conforme normas técnicas, com ART e diagramas completos.</p>
+</div>
+<div class="card">
+<h3>Instalações e Execução</h3>
+<p>Execução de instalações elétricas com mão de obra qualificada e materiais de qualidade.</p>
+</div>
+<div class="card">
+<h3>Consultoria Técnica</h3>
+<p>Avaliações técnicas, inspeções e laudos para condomínios, empresas e residências.</p>
+</div>
+</div>
+</section>
+<section id="projetos">
+<h2>Projetos Realizados</h2>
+<div class="grid">
+<div class="card">
+<h3>Condomínio Jardim Camburi</h3>
+<p>Projeto e execução de infraestrutura elétrica para 42 unidades com sistema fotovoltaico.</p>
+</div>
+<div class="card">
+<h3>Residência Alto Padrão</h3>
+<p>Instalação completa com automação, proteção e iluminação inteligente.</p>
+</div>
+<div class="card">
+<h3>Comercial Vila Velha</h3>
+<p>Reforma elétrica em galpão comercial com foco em eficiência e segurança.</p>
+</div>
+</div>
+</section>
+<section id="contato">
+<h2>Contato</h2>
+<form action="https://formsubmit.co/diogof.allochio@gmail.com" method="POST" style="max-width:600px;margin-top:1.5rem;">
+<label>Nome:</label><br/>
+<input name="name" required="" style="width:100%;padding:10px;margin:8px 0;" type="text"/><br/>
+<label>Email:</label><br/>
+<input name="email" required="" style="width:100%;padding:10px;margin:8px 0;" type="email"/><br/>
+<label>Mensagem:</label><br/>
+<textarea name="message" required="" rows="5" style="width:100%;padding:10px;margin:8px 0;"></textarea><br/>
+<button style="padding:12px 24px;background-color:#0a0a23;color:white;border:none;border-radius:6px;" type="submit">Enviar</button>
+</form>
+</section>
+<section id="galeria">
+<h2>Galeria de Projetos</h2>
+<div class="grid"><div class="card"><img alt="Projeto" src="projeto1.jpg" style="width:100%;border-radius:8px;"/></div><div class="card"><img alt="Projeto" src="projeto2.jpg" style="width:100%;border-radius:8px;"/></div><div class="card"><img alt="Projeto" src="projeto3.jpg" style="width:100%;border-radius:8px;"/></div><div class="card"><img alt="Projeto" src="projeto4.jpg" style="width:100%;border-radius:8px;"/></div><div class="card"><img alt="Projeto" src="projeto5.jpg" style="width:100%;border-radius:8px;"/></div><div class="card"><img alt="Projeto" src="projeto6.jpg" style="width:100%;border-radius:8px;"/></div></div>
+</section>
+<a href="https://wa.me/5527998456847" style="
+    position:fixed;
+    bottom:20px;
+    right:20px;
+    background-color:#25D366;
+    color:white;
+    padding:12px 20px;
+    border-radius:50px;
+    text-decoration:none;
+    font-weight:bold;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+    z-index:1000;" target="_blank">
+    WhatsApp
+  </a>
 
-  <section id="sobre">
-    <h2>Sobre Nós</h2>
-    <p>Somos uma empresa especializada em engenharia elétrica, com foco em qualidade, inovação e eficiência. Atuamos em projetos residenciais, prediais e industriais, entregando soluções inteligentes para nossos clientes.</p>
-  </section>
-
-  <section id="servicos">
-    <h2>Serviços</h2>
-    <div class="grid">
-      <div class="card">
-        <h3>Projetos Elétricos</h3>
-        <p>Desenvolvimento de projetos conforme normas técnicas, com ART e diagramas completos.</p>
-      </div>
-      <div class="card">
-        <h3>Instalações e Execução</h3>
-        <p>Execução de instalações elétricas com mão de obra qualificada e materiais de qualidade.</p>
-      </div>
-      <div class="card">
-        <h3>Consultoria Técnica</h3>
-        <p>Avaliações técnicas, inspeções e laudos para condomínios, empresas e residências.</p>
-      </div>
-    </div>
-  </section>
-
-  <section id="projetos">
-    <h2>Projetos Realizados</h2>
-    <div class="grid">
-      <div class="card">
-        <h3>Condomínio Jardim Camburi</h3>
-        <p>Projeto e execução de infraestrutura elétrica para 42 unidades com sistema fotovoltaico.</p>
-      </div>
-      <div class="card">
-        <h3>Residência Alto Padrão</h3>
-        <p>Instalação completa com automação, proteção e iluminação inteligente.</p>
-      </div>
-      <div class="card">
-        <h3>Comercial Vila Velha</h3>
-        <p>Reforma elétrica em galpão comercial com foco em eficiência e segurança.</p>
-      </div>
-    </div>
-  </section>
-
-  <footer>
-    &copy; 2025 RDVIX Engenharia. Todos os direitos reservados.
-  </footer>
+    © 2025 RDVIX Engenharia. Todos os direitos reservados.
+  
 </body>
 </html>
